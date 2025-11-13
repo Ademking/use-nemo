@@ -79,6 +79,8 @@ export function MyComponent() {
 }
 ```
 
+Demo: [https://stackblitz.com/edit/use-nemo-example](https://stackblitz.com/edit/use-nemo-example?file=src%2Fdirectives%2FuseNemo.ts)
+
 ## API Reference
 
 ### DirectiveHandler
