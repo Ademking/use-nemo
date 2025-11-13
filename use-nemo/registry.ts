@@ -5,7 +5,11 @@
  * Users can register their custom directives by importing and using this registry.
  */
 
-import type { DirectiveHandler, Directives, DirectiveRegistrar } from "./types";
+import type {
+  DirectiveHandler,
+  Directives,
+  DirectiveRegistrar,
+} from "./types.js";
 
 class DirectiveRegistry implements DirectiveRegistrar {
   private directives: Directives = {};

@@ -2,7 +2,7 @@
  * Helper functions for creating directive injections
  */
 
-import type { DirectiveScope } from "./types";
+import type { DirectiveScope } from "./types.js";
 
 /**
  * Finds the function scope that contains a directive

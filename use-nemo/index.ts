@@ -38,7 +38,7 @@ function transpileJSX(code: string): string {
 
 import type { Plugin } from "vite";
 import React from "react";
-import { directiveRegistry } from "./registry";
+import { directiveRegistry } from "./registry.js";
 import {
   getAllDirectiveScopes,
   getDirectiveScope,
@@ -57,7 +57,7 @@ import {
   removeImport,
   addImport,
   replaceHook,
-} from "./helpers";
+} from "./helpers.js";
 import fs from "fs";
 import path from "path";
 
@@ -472,7 +472,7 @@ export default function customDirectives(): Plugin {
   };
 }
 
-export { directiveRegistry } from "./registry";
+export { directiveRegistry } from "./registry.js";
 export {
   getAllDirectiveScopes,
   getDirectiveScope,
@@ -491,11 +491,11 @@ export {
   removeImport,
   addImport,
   replaceHook,
-} from "./helpers";
+} from "./helpers.js";
 export type {
   DirectiveContext,
   DirectiveHandler,
   DirectiveScope,
   Directives,
   DirectiveRegistrar,
-} from "./types";
+} from "./types.js";
