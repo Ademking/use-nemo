@@ -1,6 +1,6 @@
 {
     "name": "use-nemo",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A Vite plugin that enables custom directives in your React code",
     "keywords": [
         "vite",
