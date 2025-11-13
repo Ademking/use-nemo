@@ -1,0 +1,9 @@
+.npmignore
+dist
+*.ts
+!*.d.ts
+node_modules
+.git
+.gitignore
+src
+tsconfig*.json

@@ -1,0 +1,66 @@
+{
+    "name": "use-nemo",
+    "version": "1.0.0",
+    "description": "A Vite plugin that enables custom directives in your React code",
+    "keywords": [
+        "vite",
+        "plugin",
+        "directives",
+        "react",
+        "typescript"
+    ],
+    "author": "Adem Kouki <ademkingnew@gmail.com>",
+    "license": "MIT",
+    "type": "module",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        },
+        "./registry": {
+            "import": "./dist/registry.js",
+            "types": "./dist/registry.d.ts"
+        },
+        "./helpers": {
+            "import": "./dist/helpers.js",
+            "types": "./dist/helpers.d.ts"
+        },
+        "./types": {
+            "import": "./dist/types.js",
+            "types": "./dist/types.d.ts"
+        }
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "prepublishOnly": "npm run build"
+    },
+    "peerDependencies": {
+        "vite": "^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0",
+        "react": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+    },
+    "peerDependenciesMeta": {
+        "react": {
+            "optional": true
+        }
+    },
+    "devDependencies": {
+        "typescript": "~5.9.3",
+        "@types/node": "^24.10.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Ademking/use-nemo"
+    },
+    "bugs": {
+        "url": "https://github.com/Ademking/use-nemo/issues"
+    },
+    "homepage": "https://github.com/Ademking/use-nemo#readme"
+}
